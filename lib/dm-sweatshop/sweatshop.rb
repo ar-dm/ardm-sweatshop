@@ -15,10 +15,10 @@ module DataMapper
 
     # Models map stores named Procs for a class.
     # Each Proc must return a Hash of attributes.
-    self.model_map = Hash.new {|h,k| h[k] = Hash.new {|h,k| h[k] = []}}
+    self.model_map = Hash.new {|ha,ka| ha[ka] = Hash.new {|hb,kb| hb[kb] = []}}
     # Records map stores named instances of a class.
     # Those instances may or may not be new records.
-    self.record_map = Hash.new {|h,k| h[k] = Hash.new {|h,k| h[k] = []}}
+    self.record_map = Hash.new {|ha,ka| ha[ka] = Hash.new {|hb,kb| hb[kb] = []}}
 
     # Adds a Proc to model map. Proc must return a Hash of attributes.
     #
