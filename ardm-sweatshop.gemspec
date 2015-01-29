@@ -10,6 +10,7 @@ Gem::Specification.new do |gem|
   gem.summary     = 'Ardm fork of dm-sweatshop'
   gem.description = 'DataMapper plugin for building pseudo random models'
   gem.homepage    = "https://github.com/ar-dm/ardm-sweatshop"
+  gem.license     = 'MIT'
 
   gem.files            = `git ls-files`.split("\n")
   gem.test_files       = `git ls-files -- {spec}/*`.split("\n")
